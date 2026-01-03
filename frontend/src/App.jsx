@@ -1,5 +1,21 @@
+import axios from "./api/axiosconfig";
+import { useEffect } from "react";
+
 const App = () => {
-  return <div>App</div>;
+  const getProduct = async () => {
+    try {
+      const response = await axios.get("/products");
+      console.log(response);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    getProduct();
+  }, []);
+
+  return <div></div>;
 };
 
 export default App;

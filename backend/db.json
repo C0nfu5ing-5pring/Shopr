@@ -249,5 +249,7 @@
       "email": "johndoe.com",
       "password": "1234"
     }
-  ]
+  ],
+
+  "cart": []
 }
